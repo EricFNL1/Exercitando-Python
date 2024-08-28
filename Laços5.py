@@ -1,18 +1,9 @@
-inicio = 1
-
 entrada = int(input("Insira um número e descubra o seu Fatorial: ")) 
-confirmar = int(input("Confirme o valor de entrada: ")) 
+fatorial = entrada + 1
 
-teste = confirmar + 1
-recebe = 1
-atuali = entrada
+total = 1
 
-while inicio != 0:
-    reduz = entrada-1
-    atuali += -1
-    mult = entrada * reduz
-    recebe = mult*reduz 
-    teste+= -1
-    if teste == 0:
-        print(recebe)
-        break
+for i in range(1, fatorial, 1):
+    resultado = entrada * (i)
+    total *= i
+    print(total)
